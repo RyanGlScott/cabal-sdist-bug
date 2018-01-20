@@ -1,0 +1,22 @@
+name:                cabal-sdist-bug
+version:             0.1.0
+synopsis:            A bug in cabal sdist
+description:         A bug in cabal sdist?
+author:              Ryan Scott
+maintainer:          Ryan Scott
+copyright:           (c) 2018 Ryan Scott
+category:            Compatibility
+build-type:          Simple
+cabal-version:       >=1.10
+license:             BSD3
+license-file:        LICENSE
+extra-source-files:  check-hs/*.check.hs
+
+source-repository head
+  type:                git
+  location:            https://github.com/RyanGlScott/cabal-sdist-bug
+
+library
+  exposed-modules: Foo
+  hs-source-dirs: .
+  default-language: Haskell2010
